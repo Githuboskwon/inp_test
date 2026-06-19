@@ -20,6 +20,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useCounterStore } from "@/store/counterStore";
+import TestCard from "@/components/TestCard";
 
 // Zod 폼 스키마 예제
 const formSchema = z.object({
@@ -128,6 +129,11 @@ export default function HomePage() {
           </CardContent>
         </Card>
       </div>
+
+      {/* TestCard 컴포넌트 */}
+      <section>
+        <TestCard />
+      </section>
 
       {/* 기술 스택 뱃지 */}
       <section>
